@@ -28,9 +28,9 @@ const HeroSection = () => {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="mx-auto mt-12 px-4 py-2 rounded-full bg-gray-100 text-[#F83002] font-medium text-sm md:text-base"
+          className="mx-auto mt-12 px-4 py-2 rounded-full bg-gray-100 text-[#3b82f6] font-medium text-sm md:text-base"
         >
-          No.1 Job Hunt Website
+          Welcome to Lotlite Job Portal
         </motion.samp>
 
         <motion.h1
@@ -40,17 +40,16 @@ const HeroSection = () => {
           className="text-4xl md:text-5xl font-bold"
         >
           Search, Apply & <br />
-          Get Your <span className="text-[#6A38C2]">Dream Job</span>
+          Get Your <span className="text-[#3b82f6]">Dream Job</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-sm md:text-base px-2 md:px-0"
+          className="text-sm md:text-base px-2 md:px-0 text-gray-600 max-w-2xl mx-auto"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim
-          accusantium dolore? Saepe, adipisci?
+          Discover thousands of job opportunities with Lotlite Job Portal. We connect talented professionals with leading companies to create meaningful career opportunities.
         </motion.p>
 
         <motion.div
@@ -65,7 +64,7 @@ const HeroSection = () => {
             onChange={(e) => setQuery(e.target.value)}
             className="outline-none border-none w-full text-sm md:text-base px-2 py-2"
           />
-          <Button onClick={searchJobHandler} className="rounded-r-full bg-[#6A38C2] p-2 md:p-3">
+          <Button onClick={searchJobHandler} className="rounded-r-full bg-[#3b82f6] hover:bg-[#2563eb] p-2 md:p-3">
             <Search className="h-5 w-5" />
           </Button>
         </motion.div>

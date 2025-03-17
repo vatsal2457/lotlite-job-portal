@@ -35,7 +35,7 @@ const Navbar = () => {
     <div className="flex items-center justify-between mx-auto max-w-screen-xl h-16 px-4 md:px-8">
       {/* Logo */}
       <h1 className="text-2xl font-bold">
-        Job<span className="text-[#F83002]">Portal</span>
+        <span className="text-[#3b82f6]">Lotlite</span> Job Portal
       </h1>
 
       {/* Right Section (Navigation + Profile Section) */}
@@ -45,12 +45,12 @@ const Navbar = () => {
           {user && user.role === "recruiter" ? (
             <>
               <li>
-                <Link className="hover:text-[#F83002]" to="/admin/companies">
+                <Link className="hover:text-[#3b82f6]" to="/admin/companies">
                   Companies
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-[#F83002]" to="/admin/jobs">
+                <Link className="hover:text-[#3b82f6]" to="/admin/jobs">
                   Jobs
                 </Link>
               </li>
@@ -58,17 +58,17 @@ const Navbar = () => {
           ) : (
             <>
               <li>
-                <Link className="hover:text-[#F83002]" to="/">
+                <Link className="hover:text-[#3b82f6]" to="/">
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-[#F83002]" to="/jobs">
+                <Link className="hover:text-[#3b82f6]" to="/jobs">
                   Jobs
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-[#F83002]" to="/browse">
+                <Link className="hover:text-[#3b82f6]" to="/browse">
                   Browse
                 </Link>
               </li>
@@ -136,7 +136,7 @@ const Navbar = () => {
                 <Button variant="outline">Login</Button>
               </Link>
               <Link to="/signup">
-                <Button className="bg-[#6A38C2] hover:bg-[#5b30a6]">Signup</Button>
+                <Button className="bg-[#3b82f6] hover:bg-[#2563eb]">Signup</Button>
               </Link>
             </div>
           )}
@@ -151,12 +151,12 @@ const Navbar = () => {
           {user.role === "recruiter" ? (
             <>
               <li>
-                <Link className="hover:text-[#F83002]" to="/admin/companies" onClick={() => setMenuOpen(false)}>
+                <Link className="hover:text-[#3b82f6]" to="/admin/companies" onClick={() => setMenuOpen(false)}>
                   Companies
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-[#F83002]" to="/admin/jobs" onClick={() => setMenuOpen(false)}>
+                <Link className="hover:text-[#3b82f6]" to="/admin/jobs" onClick={() => setMenuOpen(false)}>
                   Jobs
                 </Link>
               </li>
@@ -164,17 +164,17 @@ const Navbar = () => {
           ) : (
             <>
               <li>
-                <Link className="hover:text-[#F83002] " to="/" onClick={() => setMenuOpen(false)}>
+                <Link className="hover:text-[#3b82f6]" to="/" onClick={() => setMenuOpen(false)}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-[#F83002]" to="/jobs" onClick={() => setMenuOpen(false)}>
+                <Link className="hover:text-[#3b82f6]" to="/jobs" onClick={() => setMenuOpen(false)}>
                   Jobs
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-[#F83002]" to="/browse" onClick={() => setMenuOpen(false)}>
+                <Link className="hover:text-[#3b82f6]" to="/browse" onClick={() => setMenuOpen(false)}>
                   Browse
                 </Link>
               </li>
